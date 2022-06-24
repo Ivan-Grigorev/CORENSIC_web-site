@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORENSIC</title>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'>
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+</head>
+<body>
+    <div id="card-main" class="card-main">
+        <header>
+            <div class="logo">
+                <img src="{% static 'images/corensic_logo.svg' %}">
+            </div>
+            <nav class="dropdown-bar">
+                <label for="dropdown-box">
+                    <div class="btn-bar" id="btn-bar" onclick="barTransform(this)">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+                <input type="checkbox" id="dropdown-box">
+                <div class="dropdown-list">
+                    <div class="dropdown-list-option">
+                        <span>01</span><a href="#about-us">ABOUT US</a>
+                    </div>
+                    <div class="dropdown-list-option">
+                        <span>02</span><a href="#our-services">OUR SERVICES</a>
+                    </div>
+                    <div class="dropdown-list-option">
+                        <span>03</span><a href="#products">PRODUCTS</a>
+                    </div>
+                    <div class="dropdown-list-option">
+                        <span>04</span><a href="#contact-us">CONTACT US</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main-label">
+            <h4><span style="color: #6328C4;">Care</span> for your community</h4>
+            <h4>Care for your business</h4>
+            <h4>Care for your future</h4>
+        </div>
+        <hr class="underline-future">
+        <div class="main-description">
+            <p>We develop digital products that have a significant social impact</p>
+        </div>
+        <div class="btn-contact-us" id="btn-contact-us">
+            <a href="#contact-us"><img src="{% static 'images/contact_us.svg' %}"></a>
+        </div>
+    </div>
+
+
+    <div class="card-about-us"><a id="about-us"></a>
+        <div class="about-us-text">
+            <div class="about-us-title">
+                <p>ABOUT US</p>
+            </div>
+            <hr class="underline-1">
+            <ul>
+                <li>We started as a group of like-minded people around one product and grew into a team of IT
+                    specialists who aim to satisfy all the needs of startups in developing and adapting mvp and
+                    finding the market fit.</li>
+                <li>We think of ourselves as entrepreneurs and are committed to the needs of our entrepreneurial
+                    customers.</li>
+                <li>We anticipate consumer needs and are committed to treating the pain of target audiences.</li>
+                <li>We understand what and how investors are looking for and we focus on the product from the
+                    perspective of commercial interest.</li>
+            </ul>
+        </div>
+        <div class="lighthouse-image">
+            <div class="lighthouse-image-hover"></div>
+            <div class="lighthouse-image-hover"></div>
+            <div class="lighthouse-image-hover">&#8679;</div>
+            <div class="lighthouse-image-hover">&#8681;</div>
+            <div class="lighthouse-image-hover"></div>
+            <div class="lighthouse-image-hover"></div>
+        </div>
+    </div>
+
+
+    <div class="card-our-services"><a id="our-services"></a>
+        <div class="services">
+            <div class="service-option">
+                WEB & MOBILE DEVELOPMENT<span style="float: right;">&#8599;</span>
+            </div>
+            <div class="service-option">
+                UX & UI DESIGN<span style="float: right;">&#8599;</span>
+            </div>
+            <div class="service-option">
+                PRODUCT MANAGEMENT<span style="float: right;">&#8599;</span>
+            </div>
+            <div class="service-option">
+                IT PROJECT MANAGEMENT<span style="float: right;">&#8599;</span>
+            </div>
+            <div class="service-option">
+                QA & QC<span style="float: right;">&#8599;</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="our-services-title">
+                <p>OUR SERVICES</p>
+            </div>
+            <hr class="underline-2">
+            <img class="buildings-image" src="{% static 'images/austin.png' %}">
+        </div>
+    </div>
+
+
+    <div class="card-products"><a id="products"></a>
+        <div class="products-title">
+            <p>PRODUCTS</p>
+        </div>
+        <hr class="underline-3">
+        <div class="products-container">
+            <div>
+                <img class="product-card" src="{% static 'images/joo_tips_card.png' %}">
+                <img class="product-card" src="{% static 'images/bag_time_card.png' %}">
+                <img class="product-card" src="{% static 'images/tut_card.png' %}">
+                <img class="product-card" src="{% static 'images/quiqoo_card.png' %}">
+            </div>
+            <div>
+                <img class="product-card" src="{% static 'images/dare_too_card.png' %}">
+                <img class="product-card" src="{% static 'images/briefcall_card.png' %}">
+                <img class="product-card" src="{% static 'images/cycl_card.png' %}">
+                <img class="product-card" src="{% static 'images/zerohero_card.png' %}">
+            </div>
+            <div>
+                <img class="product-card" src="{% static 'images/coredived_card.png' %}">
+                <img class="product-card" src="{% static 'images/luuvy_card.png' %}">
+                <img class="product-card" src="{% static 'images/mall_ar_card.png' %}">
+                <img class="product-card" src="{% static 'images/pipl_card.png' %}">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card-contact-us" id="card-contact-us"><a id="contact-us"></a>
+        <div class="contact-us-title">
+            <p>CONTACT US</p>
+        </div>
+        <hr class="underline-4">
+        <div class="guests-info">
+            <p class="guests-info-title">I'm interested in...</p>
+            <div class="interested-options">
+                <button class="btn-interested-option">Web & Mobile Development</button>
+                <button class="btn-interested-option">UX & UI Design</button>
+                <button class="btn-interested-option">Product Management</button>
+                <button class="btn-interested-option">IT Project Management</button>
+                <button class="btn-interested-option">QA & QC</button>
+                <button class="btn-interested-option">Other</button>
+            </div>
+            <div class="inputs-group">
+                <input name="name" type="text" placeholder="Your name" required>
+                <input name="email" type="email" placeholder="Your email" required>
+                <input name="about-project" type="text" placeholder="Tell us about your project">
+            </div>
+            <form method="post">
+                {% csrf_token %}
+                <button class="btn-send" type="submit">Send request</button>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <img class="footer-logo" src="{% static 'images/corensic_logo.svg' %}">
+        <a href="https://www.linkedin.com/company/corensic-development/">Linkedin</a>
+    </footer>
+    <div class="copyright">
+        &#169; All rights reserved.
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="{% static 'js/card_main_background.js' %}" type="module"></script>
+    <script src="{% static 'js/hide_button.js' %}" type="module"></script>
+    <script src="{% static 'js/btn_bar.js' %}" type="text/javascript"></script>
+</body>
+</html>
