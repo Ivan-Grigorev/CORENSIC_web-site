@@ -6,7 +6,18 @@ body {
     background: #919191;
 }
 
-#card-main, .card-main {
+/* ---------- /Card-Main/---------- */
+
+#card-main {
+    margin-top: -50px;
+
+    width: 100%;
+    height: 900px;
+
+    position: absolute;
+}
+
+.card-main {
     width: 100%;
     height: 900px;
 
@@ -15,6 +26,8 @@ body {
 
 header {
     display: flex;
+
+    position: relative;
 }
 
 .logo {
@@ -23,62 +36,6 @@ header {
 
     text-align: left;
 }
-
-.dropdown-bar {
-    margin: 50px 50px 0 auto;
-}
-
-.dropdown-list {
-    margin-top: 50px;
-    margin-left: -180px;
-
-    width: 750px;
-    height: 0;
-
-    display: grid, block;
-
-    position: absolute;
-
-    z-index: 1;
-
-    overflow: hidden;
-
-    text-align: left;
-
-    background: linear-gradient(111.25deg, #070707 10.01%, #131212 69.5%, #201F1F 107.76%);
-    border-radius: 60px;
-}
-
-.dropdown-list-option {
-    margin-left: 50px;
-
-    padding-top: 30px;
-
-    width: 450px;
-    height: 80px;
-
-    border-bottom: 1px solid #C7C7C7;
-}
-
-.dropdown-list span {
-    padding-right: 40px;
-
-    font-size: 70px;
-    font-weight: 900;
-    color: #D9D9D9;
-}
-
-.dropdown-list a {
-    text-decoration: none;
-
-    font-size: 40px;
-    font-weight: 700;
-    color: #FFFFFF;
-}
-
-#dropdown-box {opacity: 0; height: 0px;}
-
-#dropdown-box:checked + .dropdown-list {height: 500px;}
 
 .btn-bar {
     float: right;
@@ -163,11 +120,70 @@ header {
     transform: rotate(-135deg);
 }
 
+.dropdown-bar {
+    margin: 50px 50px 0 auto;
+}
+
+.dropdown-list {
+    margin-top: 50px;
+    margin-left: -180px;
+
+    width: 750px;
+    height: 0;
+
+    position: absolute;
+    display: block;
+
+    z-index: 1000;
+    overflow: auto;
+
+    text-align: left;
+
+    background: linear-gradient(111.25deg, #070707 10.01%, #131212 69.5%, #201F1F 107.76%);
+    border-radius: 60px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+
+    transition-duration: 1s;
+}
+
+.dropdown-list-option {
+    margin-left: 50px;
+
+    padding-top: 30px;
+
+    width: 450px;
+    height: 80px;
+
+    border-bottom: 1px solid #C7C7C7;
+}
+
+.dropdown-list span {
+    padding-right: 40px;
+
+    font-size: 70px;
+    font-weight: 900;
+    color: #D9D9D9;
+}
+
+.dropdown-list a {
+    text-decoration: none;
+
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+#dropdown-box {opacity: 0; height: 0px;}
+
+#dropdown-box:checked + .dropdown-list {height: 500px;}
+
 .main-label {
     margin-top: 250px;
     margin-left: 150px;
 
     text-align: left;
+
+    position: relative;
 
     font-weight: 900;
     font-style: black;
@@ -181,9 +197,11 @@ h4 {
 
 hr.underline-future {
     margin-top: -140px;
-    margin-left: 820px;
+    margin-right: 300px;
 
     width: 300px;
+
+    position: relative;
 
     border: 2px solid #6328C4;
 }
@@ -191,6 +209,8 @@ hr.underline-future {
 .main-description {
     font-size: 35px;
     color: #FFFFFF;
+
+    position: relative;
 }
 
 .btn-contact-us {
@@ -198,6 +218,12 @@ hr.underline-future {
     margin-left: 80%;
 
     position: fixed;
+}
+
+/* ---------- /Card-About-Us/---------- */
+
+#about-us {
+    scroll-margin-top: -60px;
 }
 
 .card-about-us {
@@ -254,8 +280,6 @@ hr.underline-1 {
     width: 677px;
     height: 900px;
 
-    z-index: 1000;
-
     background: url('/static/images/lighthouse.png');
     background-repeat: no-repeat;
     background-size: 650px 900px;
@@ -283,6 +307,12 @@ hr.underline-1 {
     background: transparent;
     transition: background 2s;
     transition-delay: background 5s;
+}
+
+/* ---------- /Card-Our-Services/---------- */
+
+#our-services {
+    scroll-margin-top: -60px;
 }
 
 .card-our-services {
@@ -345,6 +375,12 @@ hr.underline-2 {
     border-bottom: 1px solid #FFFFFF;
 }
 
+/* ---------- /Card-Products/---------- */
+
+#products {
+    scroll-margin-top: -100px;
+}
+
 .card-products {
     width: 100%;
     height: 900px;
@@ -379,6 +415,12 @@ hr.underline-3 {
     height: 170px;
 
     padding: 10px 20px 10px 20px;
+}
+
+/* ---------- /Card-Contact-Us/---------- */
+
+#contact-us {
+    scroll-margin-top: -100px;
 }
 
 .card-contact-us {
@@ -476,6 +518,10 @@ input {
     border-bottom: 1px solid #FFFFFF;
 }
 
+::placeholder {
+    color: #C7C7C7;
+}
+
 .btn-send {
     margin-left: 50px;
 
@@ -494,6 +540,8 @@ input {
     background: transparent;
     border: 1px solid #FFFFFF;
 }
+
+/* ---------- /Footer/---------- */
 
 footer {
     height: 80px;

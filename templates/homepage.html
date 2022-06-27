@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
 </head>
 <body>
-    <div id="card-main" class="card-main">
+    <div class="card-main">
+        <div id="card-main"></div>
         <header>
             <div class="logo">
                 <img src="{% static 'images/corensic_logo.svg' %}">
@@ -53,7 +54,6 @@
         </div>
     </div>
 
-
     <div class="card-about-us"><a id="about-us"></a>
         <div class="about-us-text">
             <div class="about-us-title">
@@ -80,7 +80,6 @@
             <div class="lighthouse-image-hover"></div>
         </div>
     </div>
-
 
     <div class="card-our-services"><a id="our-services"></a>
         <div class="services">
@@ -109,7 +108,6 @@
         </div>
     </div>
 
-
     <div class="card-products"><a id="products"></a>
         <div class="products-title">
             <p>PRODUCTS</p>
@@ -137,7 +135,6 @@
         </div>
     </div>
 
-
     <div class="card-contact-us" id="card-contact-us"><a id="contact-us"></a>
         <div class="contact-us-title">
             <p>CONTACT US</p>
@@ -146,12 +143,24 @@
         <div class="guests-info">
             <p class="guests-info-title">I'm interested in...</p>
             <div class="interested-options">
-                <button class="btn-interested-option">Web & Mobile Development</button>
-                <button class="btn-interested-option">UX & UI Design</button>
-                <button class="btn-interested-option">Product Management</button>
-                <button class="btn-interested-option">IT Project Management</button>
-                <button class="btn-interested-option">QA & QC</button>
-                <button class="btn-interested-option">Other</button>
+                <button class="btn-interested-option" name="web-mobile" value="web-mobile">
+                    Web & Mobile Development
+                </button>
+                <button class="btn-interested-option" name="ux-ui" value="ux-ui">
+                    UX & UI Design
+                </button>
+                <button class="btn-interested-option" name="product-management" value="product-management">
+                    Product Management
+                </button>
+                <button class="btn-interested-option" name="project-management" value="project-management">
+                    IT Project Management
+                </button>
+                <button class="btn-interested-option" name="qa-qc" value="qa-qc">
+                    QA & QC
+                </button>
+                <button class="btn-interested-option" name="other" value="other">
+                    Other
+                </button>
             </div>
             <div class="inputs-group">
                 <input name="name" type="text" placeholder="Your name" required>
@@ -164,7 +173,6 @@
             </form>
         </div>
     </div>
-
 
     <footer>
         <img class="footer-logo" src="{% static 'images/corensic_logo.svg' %}">
