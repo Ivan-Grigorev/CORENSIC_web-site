@@ -16,7 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from CORENSIC_site_app.views import Error400Page, Error403Page, Error404Page, Error500Page
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('CORENSIC_site_app.urls')),
 ]
+
+handler400 = Error400Page.as_view()
+handler403 = Error403Page.as_view()
+handler404 = Error404Page.as_view()
+handler500 = Error500Page.as_view()

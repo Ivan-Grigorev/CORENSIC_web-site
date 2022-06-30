@@ -171,44 +171,53 @@
             <p class="guests-info-title">I'm interested in...</p>
             <form method="POST">
                 {% csrf_token %}
-                <div class="interested-options-group">
+                <div class="interested-services-group">
                     <div style="display: flex;">
-                        <input id="web-mobile" type="checkbox" name="interested-option" value="Web-Mobile-Development">
-                        <label for="web-mobile">
-                            Web & Mobile Development
-                        </label>
-
-                        <input id="ui-ux" type="checkbox" name="interested-option" value="UX-UI">
-                        <label for="ui-ux" class="btn-interested-option">
-                            UX & UI Design
-                        </label>
-
-                        <input id="product-management" type="checkbox" name="interested-option" value="Product-Management">
-                        <label for="product-management">
-                            Product Management
-                        </label>
+                        <div class="interested-service">
+                            <input id="web-mobile" type="checkbox" name="interested-service" value="Web-Mobile-Development">
+                            <label for="web-mobile">
+                                Web & Mobile Development
+                            </label>
+                        </div>
+                        <div class="interested-service">
+                            <input id="ui-ux" type="checkbox" name="interested-service" value="UX-UI">
+                            <label for="ui-ux" class="btn-interested-option">
+                                UX & UI Design
+                            </label>
+                        </div>
+                        <div class="interested-service">
+                            <input id="product-management" type="checkbox" name="interested-service" value="Product-Management">
+                            <label for="product-management">
+                                Product Management
+                            </label>
+                        </div>
                     </div>
                     <div style="display: flex;">
-                        <input id="it-project-management" type="checkbox" name="interested-option" value="IT-Project-Management">
-                        <label for="it-project-management">
-                            IT Project Management
-                        </label>
-
-                        <input id="qa-qc" type="checkbox" name="interested-option" value="QA-QC">
-                        <label for="qa-qc">
-                            QA & QC
-                        </label>
-
-                        <input id="other" type="checkbox" name="interested-option" value="Other">
-                        <label for="other">
-                            Other
-                        </label>
+                        <div class="interested-service">
+                            <input id="it-project-management" type="checkbox" name="interested-service" value="IT-Project-Management">
+                            <label for="it-project-management">
+                                IT Project Management
+                            </label>
+                        </div>
+                        <div class="interested-service">
+                            <input id="qa-qc" type="checkbox" name="interested-service" value="QA-QC">
+                            <label for="qa-qc">
+                                QA & QC
+                            </label>
+                        </div>
+                        <div class="interested-service">
+                            <input id="other" type="checkbox" name="interested-service" value="Other">
+                            <label for="other">
+                                Other
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div class="inputs-group">
                     <input name="name" type="text" placeholder="Your name*" required>
                     <input name="email" type="email" placeholder="Your email*" required>
-                    <input name="project-description" type="text" placeholder="Tell us about your project" maxlength="200">
+                    <input name="project-description" type="text" placeholder="Tell us shortly about your project*"
+                           maxlength="200" required>
                 </div>
                 <button class="btn-send" type="submit">
                     Send request
