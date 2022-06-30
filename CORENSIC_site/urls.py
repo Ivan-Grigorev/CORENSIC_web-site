@@ -18,6 +18,7 @@ from django.urls import path, include
 
 from CORENSIC_site_app.views import Error400Page, Error403Page, Error404Page, Error500Page
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('CORENSIC_site_app.urls')),

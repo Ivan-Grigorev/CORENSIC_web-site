@@ -128,7 +128,7 @@ header {
 
 .dropdown-list {
     margin-top: 50px;
-    margin-left: -265px;
+    margin-left: -263px;
 
     width: 400px;
     height: 0;
@@ -181,6 +181,18 @@ header {
 
 #dropdown-box:checked + .dropdown-list {
     height: 450px;
+}
+
+.grey-rectangle {
+    margin-top: 177px;
+    margin-left: 152px;
+
+    width: 73px;
+    height: 23px;
+
+    position: absolute;
+
+    background: #C7C7C7;
 }
 
 .main-label {
@@ -324,7 +336,7 @@ hr.underline-2 {
 
     height: 600px;
 
-    background: url('/static/images/street.png');
+    background: url('/static/images/walkman.png');
     background-repeat: no-repeat;
     background-size: 100% 600px;
 }
@@ -581,6 +593,635 @@ footer a {
 }
 
 
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+    /* ---------- /Card-Main/---------- */
+
+    #card-main {
+        display: block;
+
+        width: 100%;
+        height: 900px;
+
+        position: absolute;
+    }
+
+    .card-main {
+        width: 100%;
+        min-width: 1200px;
+        height: 900px;
+
+        text-align: center;
+    }
+
+    .mobile-card-main-image {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        min-width: 1300px;
+
+        display: flex;
+    }
+
+    .logo {
+        padding-top: 40px;
+
+        float: left;
+    }
+
+    .btn-bar {
+        margin: 0;
+
+        float: right;
+    }
+
+    #btn-bar {
+        width: 50px;
+        height: 45px;
+
+        position: relative;
+
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+
+        cursor: pointer;
+    }
+
+    #btn-bar span {
+        width: 100%;
+        height: 5px;
+
+        display: block;
+
+        position: absolute;
+
+        background: #FFFFFF;
+        border-radius: 9px;
+
+        opacity: 1;
+        left: 0;
+
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    #btn-bar span:nth-child(1) {
+        top: 0px;
+    }
+
+    #btn-bar span:nth-child(2) {
+        top: 10px;
+    }
+
+    #btn-bar span:nth-child(3) {
+        top: 20px;
+    }
+
+    #btn-bar.open span:nth-child(1) {
+        top: 18px;
+
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+
+    #btn-bar.open span:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+    }
+
+    #btn-bar.open span:nth-child(3) {
+        top: 18px;
+
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+
+    .dropdown-bar {
+        margin: 50px 50px 0 auto;
+    }
+
+    .dropdown-list {
+        margin-top: 70px;
+        margin-left: -700px;
+
+        width: 750px;
+        height: 0;
+
+        position: absolute;
+        display: block;
+
+        z-index: 1000;
+        overflow: auto;
+
+        text-align: left;
+
+        background: linear-gradient(111.25deg, #070707 10.01%, #131212 69.5%, #201F1F 107.76%);
+        border-radius: 60px;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+
+        transition-duration: 1s;
+    }
+
+    .dropdown-list-option {
+        margin-left: 50px;
+
+        padding-top: 30px;
+
+        width: 450px;
+        height: 80px;
+
+        border-bottom: 1px solid #C7C7C7;
+    }
+
+    .dropdown-list span {
+        padding-right: 40px;
+
+        font-size: 70px;
+        font-weight: 900;
+        color: #D9D9D9;
+    }
+
+    .dropdown-list a {
+        text-decoration: none;
+
+        font-size: 40px;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+
+    #dropdown-box:checked + .dropdown-list {
+        height: 500px;
+    }
+
+    .grey-rectangle {
+        margin-top: 225px;
+        margin-left: 500px;
+
+        width: 200px;
+        height: 65px;
+
+        position: absolute;
+
+        background: #C6C6C6;
+    }
+
+    .main-label {
+        width: 100%;
+
+        margin-top: 250px;
+        margin-left: 100px;
+
+        text-align: left;
+
+        position: relative;
+
+        font-weight: 900;
+        font-style: black;
+        font-size: 100px;
+        color: #FFFFFF;
+    }
+
+    h4 {
+        margin-top: -150px;
+    }
+
+    hr.underline-future {
+        margin-top: -140px;
+        margin-right: 110px;
+
+        width: 300px;
+
+        position: relative;
+
+        border: 2px solid #6328C4;
+    }
+
+    .main-description {
+        width: 100%;
+
+        font-weight: 400;
+        font-size: 35px;
+        color: #FFFFFF;
+
+        position: relative;
+    }
+
+    .btn-contact-us {
+        margin-top: 20px;
+        margin-left: 80%;
+
+        position: fixed;
+    }
+
+    .contact-us-image {
+        width: 220px;
+        height: 170px;
+    }
+
+    /* ---------- /Card-About-Us/---------- */
+
+    #about-us {
+        scroll-margin-top: -60px;
+    }
+
+    .card-about-us {
+        width: 100%;
+        min-width: 1300px;
+        height: 900px;
+
+        display: flex;
+
+        color: #FFFFFF;
+    }
+
+    .about-us-title {
+        margin: 0;
+
+        padding-top: 70px;
+
+        font-weight: 900;
+        font-style: black;
+        font-size: 50px;
+        color: #FFFFFF;
+    }
+
+    hr.underline-1 {
+        margin-top: -20px;
+        margin-left: 180px;
+        margin-bottom: 50px;
+
+        width: 150px;
+
+        border: 2px solid #6328C4;
+    }
+
+    .about-us-text {
+        padding-top: 50px;
+        padding-left: 50px;
+
+        width: 650px;
+
+        font-weight: 400;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+
+    .about-us-text li {
+        margin-left: -20px;
+
+        padding-top: 40px;
+        padding-left: 10px;
+
+        list-style-type: square;
+    }
+
+    .lighthouse-image {
+        margin-left: 20px;
+
+        width: 730px;
+        height: 900px;
+
+        background: url('/static/images/lighthouse.png');
+        background-repeat: no-repeat;
+        background-size: 730px 900px;
+    }
+
+    .lighthouse-image-hover {
+        width: 100%;
+        height: 150px;
+
+        text-align: center;
+
+        font-size: 100px;
+        color: rgba(176, 176, 176, 0.5);
+        transition: color 6s;
+
+        background: #919191;
+        transition: background 6s;
+    }
+
+    .lighthouse-image-hover:hover {
+        color: transparent;
+        transition: color 2s;
+        transition-delay: color 5s;
+
+        background: transparent;
+        transition: background 2s;
+        transition-delay: background 5s;
+    }
+
+
+    /* ---------- /Card-Our-Services/---------- */
+
+    #our-services {
+        scroll-margin-top: -60px;
+    }
+
+    .card-our-services {
+        width: 100%;
+        min-width: 1300px;
+        height: 900px;
+
+        display: flex;
+    }
+
+    .our-services-title {
+        margin: 0 0 0 80px;
+
+        width: 400px;
+
+        padding-top: 50px;
+
+        position: absolute;
+
+        font-weight: 900;
+        font-style: black;
+        font-size: 50px;
+        color: #FFFFFF;
+    }
+
+    hr.underline-2 {
+        margin: 200px 0 50px 40px;
+
+        position: absolute;
+
+        width: 150px;
+
+        border: 2px solid #6328C4;
+    }
+
+    .buildings-image {
+        margin-left: 70px;
+
+        height: 900px;
+        width: 650px;
+
+        background: url('/static/images/austin.png');
+        background-repeat: no-repeat;
+        background-size: 650px 900px;
+    }
+
+    .services {
+        margin: 0;
+
+        padding-top: 180px;
+        padding-left: 50px;
+
+        width: 650px;
+
+        background: none;
+    }
+
+    .service-option {
+        width: 100%;
+
+        padding: 60px 0 20px 0;
+
+        text-align: left;
+
+        font-weight: 400;
+        font-size: 30px;
+        color: #FFFFFF;
+
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    .service-option span {
+        display: block;
+    }
+
+    /* ---------- /Card-Products/---------- */
+
+    #products {
+        scroll-margin-top: -100px;
+    }
+
+    .card-products {
+        width: 100%;
+        min-width: 1300px;
+        height: 900px;
+    }
+
+    .products-title {
+        padding-top: 70px;
+        padding-left: 50px;
+
+        font-weight: 900;
+        font-style: black;
+        font-size: 50px;
+        color: #FFFFFF;
+    }
+
+    hr.underline-3 {
+        margin-top: -20px;
+        margin-left: 220px;
+        margin-bottom: 50px;
+
+        width: 150px;
+
+        border: 2px solid #6328C4;
+    }
+
+    .products-container {
+        text-align: center;
+    }
+
+    .btn-product-card {
+        margin: 10px 20px 10px 20px;
+
+        width: 210px;
+        height: 170px;
+    }
+
+    .product-card {
+        width: 210px;
+        height: 170px;
+    }
+
+    /* ---------- /Card-Contact-Us/---------- */
+
+    #contact-us {
+        scroll-margin-top: -100px;
+    }
+
+    .card-contact-us {
+        width: 100%;
+        min-width: 1300px;
+        height: 1000px;
+    }
+
+    .contact-us-title {
+        padding-top: 50px;
+        padding-right: 50px;
+
+        text-align: right;
+
+        font-weight: 900;
+        font-style: black;
+        font-size: 50px;
+        color: #FFFFFF;
+    }
+
+    hr.underline-4 {
+        margin: -20px 0 0 900px;
+
+        width: 150px;
+
+        border: 2px solid #6328C4;
+    }
+
+    .guests-info {
+        margin-top: 100px;
+        margin-left: 50px;
+
+        width: 850px;
+        height: 630px;
+
+        background: url('/static/images/skydsgaard.png');
+        background-repeat: no-repeat;
+        background-size: 850px 600px;
+    }
+
+    .guests-info-title {
+        padding: 50px 0 30px 50px;
+
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+
+    .interested-services-group {
+        padding-left: 50px;
+
+        display: flex;
+    }
+
+    .interested-service {
+        width: 115px;
+        height: 50px;
+    }
+
+    input[type=checkbox] + label {
+        width: 115px;
+        height: 50px;
+
+        font-size: 15px;
+        color: #FFFFFF;
+
+        background: transparent;
+        border: 1px solid #FFFFFF;
+    }
+
+    input[type=checkbox]:checked + label {
+        color: #6328C4;
+        border: 1px solid #6328C4;
+    }
+
+    .inputs-group {
+        margin-top: 10px;
+        margin-bottom: 40px;
+
+        padding-left: 50px;
+
+        display: grid;
+    }
+
+    input {
+        margin-top: 20px;
+
+        padding-top: 30px;
+
+        width: 500px;
+        height: 20px;
+
+        color: #FFFFFF;
+        font-size: 20px;
+
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    ::placeholder {
+        color: #C7C7C7;
+    }
+
+    .btn-send {
+        margin-left: 50px;
+
+        width: 150px;
+        height: 50px;
+
+        font-size: 20px;
+        color: #060606;
+
+        background: #FFFFFF;
+        border: none;
+    }
+
+    .btn-send:hover {
+        color: #FFFFFF;
+        background: transparent;
+        border: 1px solid #FFFFFF;
+    }
+
+    /* ---------- /Footer/---------- */
+
+    footer {
+        width: 100%;
+        min-width: 1300px;
+        height: 80px;
+
+        border-top: 2px solid #6328C4;
+        border-bottom: 2px solid #6328C4;
+    }
+
+    .footer-logo {
+        padding: 20px 0 20px 50px;
+
+        width: 200px;
+    }
+
+    footer a {
+        padding: 20px 50px 20px 0;
+
+        float: right;
+
+        text-decoration: none;
+
+        font-size: 30px;
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+
+    .copyright {
+        margin: 30px 0 30px 500px;
+
+        text-align: center;
+
+        color: #C7C7C7;
+    }
+}
+
+
 @media screen and (min-width: 1024px) {
     /* ---------- /Card-Main/---------- */
 
@@ -757,6 +1398,18 @@ footer a {
 
     #dropdown-box:checked + .dropdown-list {
         height: 500px;
+    }
+
+    .grey-rectangle {
+        margin-top: 225px;
+        margin-left: 550px;
+
+        width: 200px;
+        height: 65px;
+
+        position: absolute;
+
+        background: #C6C6C6;
     }
 
     .main-label {
