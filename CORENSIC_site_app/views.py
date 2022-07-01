@@ -12,10 +12,10 @@ class HomePage(TemplateView):
     template_name = 'homepage.html'
 
     def get(self, request, *args, **kwargs):
-        record = self.model_visit(guests_ip=ipinfo.getHandler('c3ef7fe9b908a3').getDetails().ip,
-                                  guests_location=[ipinfo.getHandler('c3ef7fe9b908a3').getDetails().city,
-                                                   ipinfo.getHandler('c3ef7fe9b908a3').getDetails().country_name],
-                                  guests_hostname=ipinfo.getHandler('c3ef7fe9b908a3').getDetails().hostname)
+        record = self.model_visit(guests_ip=ipinfo.getHandler('001b08d2dda8e6').getDetails().ip,
+                                  guests_location=[ipinfo.getHandler('001b08d2dda8e6').getDetails().city,
+                                                   ipinfo.getHandler('001b08d2dda8e6').getDetails().country_name],
+                                  guests_hostname=ipinfo.getHandler('001b08d2dda8e6').getDetails().hostname)
 
         record.save()
         return render(request, template_name='homepage.html')
@@ -34,10 +34,10 @@ class Error400Page(TemplateView):
     template_name = 'errors_views/error_view.html'
 
     def get(self, request, *args, **kwargs):
-        record = self.model(guests_ip=ipinfo.getHandler('c3ef7fe9b908a3').getDetails().ip,
-                            guests_location=[ipinfo.getHandler('c3ef7fe9b908a3').getDetails().city,
-                                             ipinfo.getHandler('c3ef7fe9b908a3').getDetails().country_name],
-                            guests_hostname=ipinfo.getHandler('c3ef7fe9b908a3').getDetails().hostname,
+        record = self.model(guests_ip=ipinfo.getHandler('001b08d2dda8e6').getDetails().ip,
+                            guests_location=[ipinfo.getHandler('001b08d2dda8e6').getDetails().city,
+                                             ipinfo.getHandler('001b08d2dda8e6').getDetails().country_name],
+                            guests_hostname=ipinfo.getHandler('001b08d2dda8e6').getDetails().hostname,
                             error_400=True)
         record.save()
         return render(request, template_name='errors_views/400.html', status=400)
@@ -48,10 +48,10 @@ class Error403Page(TemplateView):
     template_name = 'errors_views/error_view.html'
 
     def get(self, request, *args, **kwargs):
-        record = self.model(guests_ip=ipinfo.getHandler('c3ef7fe9b908a3').getDetails().ip,
-                            guests_location=[ipinfo.getHandler('c3ef7fe9b908a3').getDetails().city,
-                                             ipinfo.getHandler('c3ef7fe9b908a3').getDetails().country_name],
-                            guests_hostname=ipinfo.getHandler('c3ef7fe9b908a3').getDetails().hostname,
+        record = self.model(guests_ip=ipinfo.getHandler('001b08d2dda8e6').getDetails().ip,
+                            guests_location=[ipinfo.getHandler('001b08d2dda8e6').getDetails().city,
+                                             ipinfo.getHandler('001b08d2dda8e6').getDetails().country_name],
+                            guests_hostname=ipinfo.getHandler('001b08d2dda8e6').getDetails().hostname,
                             error_403=True)
         record.save()
         return render(request, template_name='errors_views/403.html', status=403)
@@ -62,10 +62,10 @@ class Error404Page(TemplateView):
     template_name = 'errors_views/error_view.html'
 
     def get(self, request, *args, **kwargs):
-        record = self.model(guests_ip=ipinfo.getHandler('c3ef7fe9b908a3').getDetails().ip,
-                            guests_location=[ipinfo.getHandler('c3ef7fe9b908a3').getDetails().city,
-                                             ipinfo.getHandler('c3ef7fe9b908a3').getDetails().country_name],
-                            guests_hostname=ipinfo.getHandler('c3ef7fe9b908a3').getDetails().hostname,
+        record = self.model(guests_ip=ipinfo.getHandler('001b08d2dda8e6').getDetails().ip,
+                            guests_location=[ipinfo.getHandler('001b08d2dda8e6').getDetails().city,
+                                             ipinfo.getHandler('001b08d2dda8e6').getDetails().country_name],
+                            guests_hostname=ipinfo.getHandler('001b08d2dda8e6').getDetails().hostname,
                             error_404=True)
         record.save()
         return render(request, template_name='errors_views/404.html', status=404)
@@ -76,10 +76,10 @@ class Error500Page(TemplateView):
     template_name = 'errors_views/error_view.html'
 
     def get(self, request, *args, **kwargs):
-        record = self.model(guests_ip=ipinfo.getHandler('c3ef7fe9b908a3').getDetails().ip,
-                            guests_location=[ipinfo.getHandler('c3ef7fe9b908a3').getDetails().city,
-                                             ipinfo.getHandler('c3ef7fe9b908a3').getDetails().country_name],
-                            guests_hostname=ipinfo.getHandler('c3ef7fe9b908a3').getDetails().hostname,
+        record = self.model(guests_ip=ipinfo.getHandler('001b08d2dda8e6').getDetails().ip,
+                            guests_location=[ipinfo.getHandler('001b08d2dda8e6').getDetails().city,
+                                             ipinfo.getHandler('001b08d2dda8e6').getDetails().country_name],
+                            guests_hostname=ipinfo.getHandler('001b08d2dda8e6').getDetails().hostname,
                             error_500=True)
         record.save()
         return render(request, template_name='errors_views/500.html', status=500)

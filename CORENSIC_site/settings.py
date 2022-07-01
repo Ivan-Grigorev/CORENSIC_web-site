@@ -76,12 +76,8 @@ WSGI_APPLICATION = 'CORENSIC_site.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'CORENSIC_site',
-        'USER': 'postgres',
-        'PASSWORD': 'pstgr_28.09_ig',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'CORENSIC_site.sqlite3'),
     }
 }
 
