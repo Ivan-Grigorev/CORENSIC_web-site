@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-al#fyy@^+7edyeef1c=qzm@h^$)gg!j)3=hqg##)x4at@t11#c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['192.168.0.115']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '89.184.78.85', 'www.corensic.dev']
 
 
 # Application definition
