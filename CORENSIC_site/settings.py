@@ -21,11 +21,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-al#fyy@^+7edyeef1c=qzm@h^$)gg!j)3=hqg##)x4at@t11#c'
+# with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:
+#     SECRET_KEY = f.read().strip()
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '89.184.78.85', 'www.corensic.dev']
+ALLOWED_HOSTS = ['localhost']
+# ALLOWED_HOSTS = ['corensic.dev', 'www.corensic.dev']
 
 
 # Application definition
@@ -106,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC'  # 'Europe/Kiev'
 
 USE_I18N = True
 
@@ -125,3 +129,6 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# CSRF settings
+# CSRF_TRUSTED_ORIGINS = ['https://*.corensic.dev', 'https://*.127.0.0.1']

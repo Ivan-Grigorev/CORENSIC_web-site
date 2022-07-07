@@ -1,0 +1,21 @@
+#Added config
+
+[program:manage-py]
+directory=/var/www/corensic/corensic.dev/
+command=python3 manage.py runserver
+user=corensic_site
+autostart=true
+autorestart=true
+redirect_stderr=True
+stdout_logfile=/var/www/corensic/corensic.dev/manage_out.log
+stderr_logfile=/var/www/corensic/corensic.dev/manage_err.log
+environment=USER="corensic_site"
+
+
+#Available command in terminal
+sudo supervisorctl start/stop/status
+
+#Example
+corensic@vs2480:~$ sudo supervisorctl status
+manage-py RUNNING pid 3739528, uptime 0:08:03
+
