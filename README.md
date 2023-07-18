@@ -1,0 +1,2 @@
+# CORENSIC startup landing
+### Information web page with an extended list of all types of the services and products provided by company, as well as a convenient contact card. Created statistics of visits by guests taking into account their location with a record to database, which is viewed through the admin panel.
