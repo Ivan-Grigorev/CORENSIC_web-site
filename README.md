@@ -78,6 +78,12 @@ After installation, you can use the web interface to explore the services offere
 
 To securely manage the Django `SECRET_KEY`, it is stored in a `secret_key.txt` file located in the root directory. The `settings.py` file automatically reads the key from this file.
 
+Make sure to add `secret_key.txt` to your `.gitignore` to prevent it from being exposed in a public repository:
+
+```bash
+echo "secret_key.txt" >> .gitignore
+```
+
 ## License
 
 This project is licensed under the terms of the [LICENSE](./LICENSE).
