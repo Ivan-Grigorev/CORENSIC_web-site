@@ -25,10 +25,9 @@ with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True  # Don't use True in production
 
-ALLOWED_HOSTS = ['localhost']
-# ALLOWED_HOSTS = ['corensic.dev', 'www.corensic.dev']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -109,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'  # 'Europe/Kiev'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -130,4 +129,4 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CSRF settings
-# CSRF_TRUSTED_ORIGINS = ['https://*.corensic.dev', 'https://*.127.0.0.1']
+# CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1']
